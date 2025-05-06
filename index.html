@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blech gehabt</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+  <nav class="dot-nav">
+    <a href="#start"></a>
+    <a href="#ueber-uns"></a>
+    <a href="#shows"></a>
+    <a href="#videos"></a>
+    <a href="#galerie"></a>
+    <a href="#kontakt"></a>
+  </nav>
+
+  <header id="start" class="hero">
+    <a href="#start" class="site-logo">
+      <img src="bilder/logo.png" alt="Logo Blech gehabt">
+    </a>
+
+   <div class="menu-button" onclick="toggleMenu()">☰</div>
+
+   <div class="menu-overlay" id="menu">
+     <div class="close-button" onclick="toggleMenu()">×</div>
+     <ul>
+       <li><a href="#start" onclick="toggleMenu()">Start</a></li>
+       <li><a href="#ueber-uns" onclick="toggleMenu()">Über uns</a></li>
+       <li><a href="#shows" onclick="toggleMenu()">Auftritte</a></li>
+       <li><a href="#videos" onclick="toggleMenu()">Videos</a></li>
+       <li><a href="#galerie" onclick="toggleMenu()">Galerie</a></li>
+       <li><a href="#kontakt" onclick="toggleMenu()">Kontakt</a></li>
+     </ul>
+   </div>
+
+    <div class="overlay">
+      <h1>BLECH<br>GEHABT</h1>
+    </div>
+  </header>
+
+  <section id="ueber-uns">
+    <h2>Über uns</h2>
+    <p>Wir sind Blech gehabt – eine engagierte Brassband mit Energie, Herz und Humor. 
+</br>Ob Straßenfest, Musikerhock oder Oktoberfest - mit unseren selbst geschriebenen Arrangements von Lucky Chops bis Lady Gaga   bieten wir Blasmusik auf höchstem Niveau und heizen jeder Veranstaltung ein. Ursprünglich beheimatet in verschiedenen Formationen von Musikverein bis Heavy Metal Band haben wir uns zusammengefunden, um Blech gehabt als unser gemeinsames Projekt zu starten und aus unseren verschiedenen Erfahrungen ein einzigartiges Musikerlebnis zu erschaffen. 
+</br>So garantiert jeder Auftritt von Blech gehabt Stimmung, gute Laune und Blasmusik vom Feinsten!</p>
+
+  </section>
+
+<section id="shows" class="shows">
+  <h2>Auftritte</h2>
+  <div class="show-list">
+    <div class="show">
+      <div class="show-date">
+        <div class="day">29. Mai</div>
+        <div class="year">2025</div>
+      </div>
+      <div class="show-info">
+        <strong>Waldfest 16:00 Uhr</strong>
+        <div class="location">76448 Würmersheim</div>
+      </div>
+      <div class="show-link">
+         <!-- <a href="https://beispiel-link.de" target="_blank">Mehr</a> -->
+      </div>
+    </div>
+
+    <div class="show">
+      <div class="show-date">
+        <div class="day">04. Jul</div>
+        <div class="year">2025</div>
+      </div>
+      <div class="show-info">
+        <strong>Speckkälble Fescht 18:00 Uhr</strong>
+        <div class="location">76448 Würmersheim</div>
+      </div>
+      <div class="show-link">
+          <a href="https://durmersheim.de/web/leben_speckk%C3%A4lblefest2025.html" target="_blank">Mehr</a> 
+      </div>
+    </div>
+
+
+    <div class="show">
+      <div class="show-date">
+        <div class="day">11. Jul</div>
+        <div class="year">2025</div>
+      </div>
+      <div class="show-info">
+        <strong>Volksfest 18:30 Uhr</strong>
+        <div class="location">76461 Muggensturm</div>
+      </div>
+      <div class="show-link">
+          <a href="https://www.volksfest-muggensturm.de/" target="_blank">Mehr</a> 
+      </div>
+    </div>
+
+    <div class="show">
+      <div class="show-date">
+        <div class="day">26. Jul</div>
+        <div class="year">2025</div>
+      </div>
+      <div class="show-info">
+        <strong>Dorffest 18:30 Uhr</strong>
+        <div class="location">76307 Mutschelbach</div>
+      </div>
+      <div class="show-link">
+          <a href="https://www.mutschelbach.net/dorffest-mutschelbach-2025/" target="_blank">Mehr</a> 
+      </div>
+    </div>
+
+<section id="videos" class="releases">
+  <h2>Videos</h2>
+
+  <!-- Desktop-Version (Swiper) -->
+<!-- Desktop-Version (Swiper) -->
+<div class="swiper video-swiper desktop-only">
+  <div class="swiper-wrapper" id="desktop-swiper-wrapper">
+    <!-- Dynamisch befüllte Slides per JS -->
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+  <!-- Mobile-Version (einzeln durchschaltbar) -->
+ <div class="mobile-video-wrapper mobile-only">
+  <div class="mobile-video-container">
+    <div class="swipe-overlay"></div> <!-- NEU -->
+    <div id="mobile-video-frame-container"></div>
+    <p class="video-title" id="mobile-video-title"></p>
+    <p class="video-year" id="mobile-video-year"></p>
+    <div class="mobile-nav">
+      <button onclick="prevVideo()">‹</button>
+      <button onclick="nextVideo()">›</button>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="galerie" class="gallery">
+  <h2>Galerie</h2>
+  <div class="simple-gallery">
+    <img src="bilder/galerie1.jpg" alt="Galeriebild 1" />
+    <img src="bilder/galerie2.jpg" alt="Galeriebild 2" />
+    <img src="bilder/galerie3.jpg" alt="Galeriebild 3" />
+    <img src="bilder/galerie4.jpg" alt="Galeriebild 4" />
+    <img src="bilder/galerie5.jpg" alt="Galeriebild 5" />
+    <img src="bilder/galerie6.jpg" alt="Galeriebild 6" />
+    <img src="bilder/galerie7.jpg" alt="Galeriebild 7" />
+    <img src="bilder/galerie8.jpg" alt="Galeriebild 8" />
+    <img src="bilder/galerie9.jpg" alt="Galeriebild 9" />
+  </div>
+</section>
+
+<section id="kontakt" class="kontakt-section">
+  <h2>Kontakt</h2>
+  <p>Buchungsanfragen und Kontakt bitte an:</p>
+  <p>
+    <a href="mailto:info.blechgehabt@gmail.com" class="mail-link">info.blechgehabt@gmail.com</a>
+  </p>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/blech__gehabt/" target="_blank" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 24 24">
+        <path d="M7.5 2C4.462 2 2 4.462 2 7.5v9C2 19.538 4.462 22 7.5 22h9c3.038 0 5.5-2.462 5.5-5.5v-9C22 4.462 19.538 2 16.5 2h-9zm0 2h9A3.5 3.5 0 0 1 20 7.5v9a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 16.5v-9A3.5 3.5 0 0 1 7.5 4zm9.25 1a.75.75 0 0 0 0 1.5h.01a.75.75 0 0 0 0-1.5h-.01zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+      </svg>
+      <span>Instagram ansehen</span>
+    </a>
+  </div>
+</section>
+
+
+
+<script>
+  window.addEventListener('scroll', () => {
+    const overlayText = document.querySelector('.overlay h1');
+    const header = document.querySelector('.hero');
+    const headerHeight = header.offsetHeight;
+
+    const scrollY = window.scrollY;
+    const progress = Math.min(scrollY / headerHeight, 1);
+
+    const scale = 1 + progress * 0.8; // wächst von 1.0 auf 1.8
+    const opacity = 1 - progress * 0.9; // wird von 1.0 auf 0.1 reduziert
+
+    overlayText.style.transform = `scale(${scale})`;
+    overlayText.style.opacity = opacity;
+  });
+</script>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const videos = [
+    {
+      url: "https://www.youtube-nocookie.com/embed/tMVBjx7S_Ew",
+      title: "Bad Guy",
+      year: "2024"
+    },
+    {
+      url: "https://www.youtube-nocookie.com/embed/nt_mg088VJw",
+      title: "Bad Romance / Poker Face",
+      year: "2024"
+    },
+    {
+      url: "https://www.youtube.com/embed/idc3S2-wMGs",
+      title: "Insomnia",
+      year: "2024"
+    },
+    {
+      url: "https://www.youtube-nocookie.com/embed/tMVBjx7S_Ew",
+      title: "Song 4",
+      year: "2025"
+    }
+  ];
+
+  let currentVideo = 0;
+
+  function showVideo(index) {
+    const container = document.getElementById("mobile-video-frame-container");
+    const title = document.getElementById("mobile-video-title");
+    const year = document.getElementById("mobile-video-year");
+
+    container.innerHTML = `<iframe src="${videos[index].url}" frameborder="0" allowfullscreen></iframe>`;
+    title.textContent = videos[index].title;
+    year.textContent = videos[index].year;
+  }
+
+  function nextVideo() {
+    currentVideo = (currentVideo + 1) % videos.length;
+    showVideo(currentVideo);
+  }
+
+  function prevVideo() {
+    currentVideo = (currentVideo - 1 + videos.length) % videos.length;
+    showVideo(currentVideo);
+  }
+
+  // Direkt nach dem Laden erstes Video anzeigen
+document.addEventListener("DOMContentLoaded", () => {
+  const isMobile = window.innerWidth < 768;
+
+  if (isMobile) {
+    showVideo(currentVideo);
+    // Swipe-Gesten für mobil wie gehabt ...
+  } else {
+    // Desktop: Videos dynamisch in Swiper einfügen
+    const desktopWrapper = document.getElementById("desktop-swiper-wrapper");
+
+    videos.forEach((video) => {
+      const slide = document.createElement("div");
+      slide.className = "swiper-slide portrait"; // oder landscape je nach Videoformat
+      slide.innerHTML = `
+        <iframe src="${video.url}" frameborder="0" allowfullscreen></iframe>
+        <p class="video-title">${video.title}</p>
+        <p class="video-year">${video.year}</p>
+      `;
+      desktopWrapper.appendChild(slide);
+    });
+
+    // ⬇ Swiper NACH dem Einfügen initialisieren
+    new Swiper('.video-swiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      spaceBetween: 30,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1
+        },
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        }
+      }
+    });
+  }
+});
+</script>
+
+
+</body>
+</html>
+<script>
+  const sections = document.querySelectorAll("section, header");
+  const navDots = document.querySelectorAll(".dot-nav a");
+
+  function activateDot() {
+    let currentSection = null;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const offsetTop = rect.top;
+      const offsetBottom = rect.bottom;
+
+      if (offsetTop <= window.innerHeight * 0.5 && offsetBottom >= window.innerHeight * 0.3) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    navDots.forEach((dot) => {
+      dot.classList.remove("active");
+      if (dot.getAttribute("href") === "#" + currentSection) {
+        dot.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", activateDot);
+  window.addEventListener("load", activateDot);
+</script>
+<script>
+  function toggleMenu() {
+   document.getElementById("menu").classList.toggle("active");
+   document.body.classList.toggle("menu-open"); /* Diese neue Zeile hinzufügen */
+  }
+</script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const grid = document.querySelector('.masonry-grid');
+    imagesLoaded(grid, function () {
+      new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+      });
+    });
+  });
+</script>
+
+<footer>
+  <p>&copy; 2025 Blech gehabt | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
+
