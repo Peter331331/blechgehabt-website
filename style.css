@@ -626,7 +626,7 @@ section h2 {
   color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   section h2 {
     font-size: 1.6rem;
   }
