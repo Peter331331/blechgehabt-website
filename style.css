@@ -597,7 +597,7 @@ footer a:hover {
   font-size: 1.15rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .ueberuns-section {
     font-size: 1.05rem;
     padding: 1.5rem;
@@ -610,5 +610,10 @@ footer a:hover {
   .abschlusssatz {
     font-size: 1.1rem;
   }
+  .highlight {
+  color: #9CA3DB !important;
+  font-weight: bold;
+}
+
 }
 
