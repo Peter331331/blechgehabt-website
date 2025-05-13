@@ -572,3 +572,26 @@ footer a:hover {
   font-weight: 700;
   color: #9CA3DB; /* oder eine andere Akzentfarbe */
 }
+.ueberuns-section {
+  font-size: 1.15em;
+  line-height: 1.6em;
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.highlight {
+  color: #f2c300;
+  font-weight: bold;
+}
+
+.ueberuns-section p {
+  margin-bottom: 1.2em;
+}
+
+.ueberuns-section .closing {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff;
+}
