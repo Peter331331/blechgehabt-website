@@ -573,25 +573,42 @@ footer a:hover {
   color: #9CA3DB; /* oder eine andere Akzentfarbe */
 }
 .ueberuns-section {
-  font-size: 1.15em;
-  line-height: 1.6em;
-  color: #fff;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f2f2f2;
+}
+
+.ueberuns-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .highlight {
-  color: #f2c300;
+  color: #9CA3DB;
   font-weight: bold;
 }
 
-.ueberuns-section p {
-  margin-bottom: 1.2em;
+.abschlusssatz {
+  margin-top: 1.8rem;
+  font-size: 1.15rem;
 }
 
-.ueberuns-section .closing {
-  font-size: 1.3em;
-  font-weight: bold;
-  color: #fff;
+@media (max-width: 600px) {
+  .ueberuns-section {
+    font-size: 1.05rem;
+    padding: 1.5rem;
+  }
+
+  .ueberuns-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .abschlusssatz {
+    font-size: 1.1rem;
+  }
 }
+
