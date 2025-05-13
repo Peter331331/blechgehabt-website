@@ -613,7 +613,21 @@ footer a:hover {
   .highlight {
   color: #9CA3DB !important;
   font-weight: bold;
-}
+  }
 
 }
+/* Einheitliche Sektionen-Überschriften */
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'Zaptron', 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
 
+@media (max-width: 600px) {
+  section h2 {
+    font-size: 1.6rem;
+  }
+}
