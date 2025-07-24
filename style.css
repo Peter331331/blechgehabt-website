@@ -631,3 +631,17 @@ section h2 {
     font-size: 1.6rem;
   }
 }
+.termin-wrapper.vergangen .show {
+  opacity: 0.6;
+  filter: grayscale(0.9);
+}
+
+.termin-wrapper.vergangen .show-info strong {
+  text-decoration: line-through;
+  color: #ff4d4d;
+}
+
+.termin-wrapper.vergangen .show-link a {
+  pointer-events: none;
+  opacity: 0.5;
+}
